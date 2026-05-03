@@ -8,9 +8,13 @@
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
 
+  html, body {
+    height: 100%;
+  }
+
   body {
     background-color: #D32B2B;
-    min-height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,11 +26,11 @@
 
   .title {
     color: white;
-    font-size: clamp(3rem, 16vw, 6rem);
+    font-size: clamp(2rem, 12vw, 4.5rem);
     text-align: center;
     line-height: 1;
     letter-spacing: 0.05em;
-    padding: 2rem 1rem 0;
+    padding: 1rem 1rem 0;
     text-transform: uppercase;
     user-select: none;
   }
@@ -42,7 +46,7 @@
   }
 
   .bowl-img {
-    width: min(85vw, 420px);
+    width: min(70vw, 320px);
     transition: transform 0.12s ease;
     filter: drop-shadow(0 0 0px transparent);
   }
@@ -68,7 +72,7 @@
   .card {
     width: calc(100% - 2rem);
     max-width: 420px;
-    margin: 0 1rem 2rem;
+    margin: 0 1rem 1.2rem;
     background: white;
     border-radius: 16px;
     padding: 1.2rem 1.5rem;
